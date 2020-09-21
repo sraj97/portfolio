@@ -14,6 +14,9 @@
 .image-of-shweta{
     width: 400px;
     filter: grayscale(1);
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75)
 }
 .header{
     display: flex;
@@ -23,7 +26,11 @@
     width: 100vw;
 }
 
-ol:before, ol:after {
+#timeline {
+    background-color:#Fff;
+}
+
+.list-unstyled:before, .list-unstyled:after {
     content: "";
     background: #fff;
     width: 5px;
@@ -32,24 +39,24 @@ ol:before, ol:after {
     z-index: 2;
 }
 
-ol:before {
+.list-unstyled:before {
     margin: 0 0 0 -1px;
 }
 
-ol:after {
+.list-unstyled:after {
     margin: -50px 0 0 -1px;
 }
 
-li {
+.timeline-list {
     border: 2px solid;
-    border-color: lightcoral !important;
+    border-color:#ffb5a7ff !important;
     margin:0 0 -2px 0; 
     padding: 30px;
     counter-increment: li;
     position: relative;
 }
 
-li:nth-child(odd):before, li:nth-child(even):before {
+.timeline-list:nth-child(odd):before, .timeline-list:nth-child(even):before {
     content: counter(li);
     display: flex;
     -ms-flex-pack: center!important;
@@ -61,23 +68,23 @@ li:nth-child(odd):before, li:nth-child(even):before {
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    background-color: lightcoral;
+    background-color:#ffb5a7ff;
     color: white;
     font-weight: bold;
     z-index: 3;
 }
 
-li:nth-child(odd):before {
+.timeline-list:nth-child(odd):before {
     right: 100%; 
     margin-right: -20px;
 }
 
-li:nth-child(even):before {
+.timeline-list:nth-child(even):before {
     left: 100%;
     margin-left: -20px;
 }
 
-li:nth-child(odd) {
+.timeline-list:nth-child(odd) {
     border-right: none;
     border-left: 2px solid;
     border-top-left-radius: 10px;
@@ -86,7 +93,7 @@ li:nth-child(odd) {
     padding-right: 0;
 }
 
-li:nth-child(even) {
+.timeline-list:nth-child(even) {
     border-left: none;
     border-right: 2px solid;
     border-top-right-radius: 10px;
@@ -96,13 +103,13 @@ li:nth-child(even) {
     text-align: right;
 }
 
-li:first-child {
+.timeline-list:first-child {
     border-top: none;
     border-top-right-radius:0;
     border-top-left-radius:0;
 }
 
-li:last-child {
+.timeline-list:last-child {
     border-bottom: none;
     border-bottom-right-radius:0;
     border-bottom-left-radius:0;
