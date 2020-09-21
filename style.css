@@ -5,10 +5,14 @@
     font-family: 'Raleway', sans-serif;
 }
 
+
+.navbar-custom{
+    background-color:#ffb5a7;
+}
+
 .nav-links{
     display: flex;
     justify-content: space-evenly;
-    color: #F8EDEB;
     width: 100vw;
 }
 .image-of-shweta{
