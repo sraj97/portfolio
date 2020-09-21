@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;;
+    font-family: 'Raleway', sans-serif;
 }
 
 .nav-links{
@@ -24,15 +24,72 @@
     align-items: center;
     flex-wrap: wrap;
     width: 100vw;
+    margin-bottom: 0px;
 }
 
+#section-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+#fun-facts-button{
+    display: flex;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 10vw;
+}
+.fun-facts-button-border{
+    display: flex;
+    justify-content: center;
+    border: none;
+    background-color: white;
+
+}
+.fun-facts{
+    padding: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border: 2px solid grey;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75)
+}
+
+.fun-facts-list{
+    margin-left: 2px;
+    color: grey;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: auto;
+    font-size: 16pt;
+
+}
+
+.about-me-text{
+    padding: 15px
+}
 #timeline {
-    background-color:#Fff;
+    background-color: #F8EDEB;
+    height: fit-content;
+    padding-top: 32px;
+    
 }
 
 .list-unstyled:before, .list-unstyled:after {
     content: "";
-    background: #fff;
+    background: #F8EDEB;
     width: 5px;
     height: 60px;
     position: absolute;
@@ -44,7 +101,7 @@
 }
 
 .list-unstyled:after {
-    margin: -50px 0 0 -1px;
+    margin: -60px 0 0 -1px;
 }
 
 .timeline-list {
@@ -115,13 +172,43 @@
     border-bottom-left-radius:0;
 }
 
+#java-game{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: solid grey;
+    width: 80vw;
+    height: 800px;
+    margin-top: 32px;
+    margin-bottom: 25px;
+}
 
-  
+#footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb5a7ff;
+    width: 100vw;
+    height: 300px;
+    color: grey;
+}
+.contact-icons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 50vw;
+    margin: 25px;
+}
 
+.contact-icons svg{
+    color: grey;
+}
 
 /* CSS HEX */
---melon: #ffb5a7ff;
+/* --melon: #ffb5a7ff;
 --pale-pink: #fcd5ceff;
 --isabelline: #f8edebff;
 --peach-puff: #f9dcc4ff;
---peach-crayola: #fec89aff;
+--peach-crayola: #fec89aff; */
