@@ -3,94 +3,85 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    color: grey;
 }
 
-body{
-    position: relative;
-}
-
-.navbar-custom{
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px;
+    z-index: 99; 
+    border: none; 
+    outline: none; 
     background-color:#ffb5a7;
+    color: white;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    font-size: 18px; 
+    height: 55px;
+    -webkit-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75)
+}
+  
+#myBtn:hover {
+    background-color: #555;
 }
 
-
-.top-link {
-    transition: all .25s ease-in-out;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    display: inline-flex;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    margin: 0 3em 3em 0;
-    border-radius: 50%;
-    padding: .25em;
-    width: 80px;
-    height: 80px;
-    background-color: #ffb5a7;
-}
-
-&.show {
-    visibility: visible;
-    opacity: 1;
-}
+.navbar-brand{
+    filter: brightness(1%);
+    margin-left: 5vw;
     
-&.hide {
-    visibility: hidden;
-    opacity: 0;
-}
-  
-.top-hover {
-    fill: grey;
-    width: 24px;
-    height: 12px;
-}
-  
-&:hover {
-    background-color: white;
-
-    .top-hover {
-        fill: grey;
-    }
-}
-.screen-reader-text {
-    position: absolute;
-    clip-path: inset(50%);
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    word-wrap: normal !important;
-    clip: rect(1px, 1px, 1px, 1px);
-
-    &:focus {
-    display: block;
-    top: 5px;
-    left: 5px;
-    z-index: 100000; // Above WP toolbar
-    clip-path: none;
-    background-color: #eee;
-    padding: 15px 23px 14px;
-    width: auto;
-    height: auto;
-    text-decoration: none;
-    line-height: normal;
-    color: #444;
-    font-size: 1em;
-    clip: auto !important;
-    }
 }
 .nav-links{
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 80vw;
+}
+.navbar-custom{
+    background-color:#ffb5a7;
+}
+
+.jumbotron-edit{
+    background-image: url(./davies-designs-studio-_UCVrH-ZIIg-unsplash.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #F8EDEB;
+}
+
+.container header{
+    display: flex;
+}
+
+.name-underline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 25px;
+    color: black;
+
+}
+.underline{
+    display: flex;
+    background-color: none;
+    width: 400px;
+    margin-bottom: 50px;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(1%, transparent) , to(rgba(250, 250, 250, 0.1)));
+}
+
+.lead{
+    color: black;
+
 }
 .image-of-shweta{
-    width: 400px;
+    width: 350px;
     filter: grayscale(1);
+    border-radius: 1%;
     -webkit-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.75)
@@ -113,25 +104,24 @@ body{
 }
 
 #fun-facts-button{
-    display: flex;
-    flex-wrap: wrap;
     border: none;
-    margin: 0px;
-    padding: 0px;
-    width: 20vw;
+    width: 10rem;
 }
 
 .fun-facts-button-border{
     display: flex;
     justify-content: center;
-    border: none;
     background-color: white;
     width: 100%;
+    outline: none !important;
+    border: none;
 }
-h6 {  
+h4 {  
     text-align: center;
     word-wrap: normal;
     width: 100%;
+    font-family: 'Dancing Script', cursive;
+    font-size: ;
 }
 .fun-facts{
     padding: 10px;
@@ -158,19 +148,21 @@ h6 {
     padding: 10px;
     width: auto;
     font-size: 16pt;
-
 }
 
 .about-me-text{
-    padding: 15px
+    padding: 15px;
+    font-size: 14pt;
 }
 #timeline {
     background-color: #F8EDEB;
     height: fit-content;
     padding-top: 32px;
-    
 }
 
+.list-unstyled p{
+    font-size: large;
+}
 .list-unstyled:before, .list-unstyled:after {
     content: "";
     background: #F8EDEB;
@@ -182,10 +174,12 @@ h6 {
 
 .list-unstyled:before {
     margin: 0 0 0 -1px;
+
 }
 
 .list-unstyled:after {
     margin: -60px 0 0 -1px;
+
 }
 
 .timeline-list {
@@ -195,6 +189,8 @@ h6 {
     padding: 30px;
     counter-increment: li;
     position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .timeline-list:nth-child(odd):before, .timeline-list:nth-child(even):before {
