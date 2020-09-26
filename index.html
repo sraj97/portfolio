@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="./style.css">
 
@@ -24,11 +25,11 @@
     <title>Shweta Rajput Portfolio</title>
 </head>
 <body>
-    <a class="top-link hide" href="" id="js-top">
-        <svg class = "top-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
-        <span class="screen-reader-text">Back to top</span>
-      </a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><h2>^</h2></button>
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <a class="navbar-brand logo" href="https://github.com/sraj97" target="_blank">
+            <img src="./3bd55976-401b-4929-a10d-8c5954e91e5e_200x200.png" width="50" height="50" alt="sraj-logo">
+          </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,9 +45,14 @@
         </div>
     </nav>
     <header>
-        <div class="jumbotron jumbotron-fluid jumbotron-edit" style="background-color: #F8edeb">
+        <div class="jumbotron jumbotron-fluid jumbotron-edit">
             <div class="container header">
-                <h1 class="display-4">Shweta Rajput</h1>
+                <div class = "name-underline">
+                    <h1 class="name-underline display-4">Shweta Rajput</h1>
+                    <img class = "underline" src="./pngfind.com-underline-vector-png-3326496.png"></img>
+                    <h2 class="lead">... aspiring junior developer ...</h2>
+                </div>
+                
                 <img class="image-of-shweta" src="./Shweta Rajput.jpg" alt="Image of Shweta">
             </div>
         </div>
@@ -60,13 +66,12 @@
                 week _nology course I hope to gain a foundation knowledge in software development and then take these
                 skills and build on them.</p>
         </div>
-
         <div class="fun-facts fun-facts-button" id="accordionExample">
             <div class="card" id="fun-facts-button">
                 <div>
                     <button class="text-left fun-facts-button-border" type="button" data-toggle="collapse"
                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h6>Click for fun facts!</h6>
+                        <h4>Click for fun facts!</h4>
                     </button>
                 </div>
 
@@ -76,14 +81,13 @@
                             <li>I have a hamster called Blue... after the Velociraptor in Jurassic World</li>
                             <li>I love dinosaurs!</li>
                             <li>I have a degree in Neuroscience</li>
+                            <li>I love a good binge watch!</li>
                         </ul>
                     </div>
                 </div>
             </div>
-        <div class = "skills">
-
-
         </div>
+        
             
     </section>
 
@@ -144,8 +148,8 @@
         </div>
         <p>&copy;2020 Shweta Rajput</p>
     </footer>
+    <script src="./main.js"></script>
 
-    <script src="./main.js?"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
