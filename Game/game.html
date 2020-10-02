@@ -4,14 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script async defer src="./game.js"></script>
     <link rel="stylesheet" href="gamestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
     <title>Minesweeper!</title>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Shweta-sweeper!</h1>
-    </header>
+<body id = "body">
     <section>
-        <h4>Don't really like mines so aim of the game is to avoid clicking on me!</h4>
+    <header class = "header">
+        <img class = "image" src="./wink.PNG" alt="shweta-wink">
+        <h1>Welcome to Shweta-sweeper!</h1>
+        <img class = "image" src="./Unsure.PNG" alt="shweta-unsure">
+    </header>
+    <section class = "instructions">
+        <h2>I don't really like mines so aim of the game is to avoid clicking me!</h2>
+    </section>
+    <section class = "gameGrid">
         <div id = "gameArea">
             <div id = "1" class = "cell"></div>
             <div id = "2" class = "cell"></div>
@@ -113,19 +119,13 @@
             <div id = "98" class = "cell"></div>
             <div id = "99" class = "cell"></div>
             <div id = "100" class = "cell"></div>
-
-
-
-
         </div>
     </section>
-    <section>
-        <button onclick="location.reload()"; id = "reset">Reset</button>
-    </section>
-    
-    
-
-    </section>
+<footer class = "button">
+    <button onclick="location.reload()"; id = "reset">
+        <h2>Reset</h2>
+    </button>
+</footer>
     
 </body>
 </html>
