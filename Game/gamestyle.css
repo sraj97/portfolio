@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#gameArea{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 240px;
+    width: 240px;
+    background-color: black;
+    color: white;
+}
+
+.cell{
+    border: 2px solid red;
+    background-color: black;
+    width: 80px;
+    height: 80px;
+}
+
+.bomb{
+    background-image: url("Skull-80x80.png");
+    border: 2px solid red;
+    width: 80px;
+    height: 80px;
+}
