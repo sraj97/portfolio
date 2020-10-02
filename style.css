@@ -264,11 +264,16 @@ h4 {
     justify-content: center;
     border: solid grey;
     width: 80vw;
-    height: 800px;
+    height: 80vh;
     margin-top: 32px;
     margin-bottom: 25px;
+    padding: 0px;
 }
 
+.game-image{
+    width: 50vw;
+    height: 50vh;
+}
 #footer{
     display: flex;
     flex-direction: column;
