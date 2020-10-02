@@ -14,35 +14,34 @@ const gameArea = document.getElementById("gameArea");
 const cellsNodeList = document.querySelectorAll(".cell");
 const cells = Array.from(cellsNodeList);
 
-let bombs = [];
+let randomBombLocation = [];
 
-const randomBombGenerator = () => {
-    const randomBombLocation = cells[Math.floor(Math.random() * 100)];
-    randomBombLocation.classList.add("badCell");
-    if (randomBombLocation.classList.contains("badCell")) {
-        return randomBombGenerator();
-    }
-    bombs.push(randomBombLocation);
-   
-    console.log(bombs);
-}
 
-for (let i = 0; i < 10; i++){
-    randomBombGenerator();
+const randomBombGenerator = () => cells[Math.floor(Math.random() * 100)];
+    // randomBombLocation.classList.add("badCell");
+    // if (randomBombLocation.classList.contains("badCell") === true) {
+    //     return randomBombGenerator();
+    // }
+
+
+
+for (let i = 0; i < 15; i++){
+    randomBombLocation.push(randomBombGenerator());
+    console.log(randomBombLocation);
 }
 
 cells.forEach (cell => {
     cell.addEventListener("click", (event) => {
 
-        for (let i = 0; i < bombs.length; i++) {
+        for (let i = 0; i < randomBombLocation.length; i++) {
 
-            if(event.target.getAttribute("id") === bombs[i].getAttribute("id")){
-                
-                for (let i = 0; i < bombs.length; i++) {
-                    bombs[i].classList.add("bomb");
+            if(event.target.getAttribute("id") === randomBombLocation[i].getAttribute("id")){
+                alert("Whoops you click me!")
+                for (let i = 0; i < randomBombLocation.length; i++) {
+                    randomBombLocation[i].classList.add("bomb");
                 }
                 return;
-
+                
             }
             
         }
