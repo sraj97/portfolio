@@ -14,33 +14,39 @@ const gameArea = document.getElementById("gameArea");
 const cellsNodeList = document.querySelectorAll(".cell");
 const cells = Array.from(cellsNodeList);
 
-const randomBombGenerator = () => cells[Math.floor(Math.random() * 9)];
-let randomBombLocation = [];
+let bombs = [];
 
-
-
-for (let i = 0; i < 3; i++){
-    randomBombLocation.push(randomBombGenerator());
-    console.log(randomBombLocation);
+const randomBombGenerator = () => {
+    const randomBombLocation = cells[Math.floor(Math.random() * 100)];
+    randomBombLocation.classList.add("badCell");
+    if (randomBombLocation.classList.contains("badCell")) {
+        return randomBombGenerator();
+    }
+    bombs.push(randomBombLocation);
+   
+    console.log(bombs);
 }
 
+for (let i = 0; i < 10; i++){
+    randomBombGenerator();
+}
 
 cells.forEach (cell => {
     cell.addEventListener("click", (event) => {
 
-        for (let i = 0; i < randomBombLocation.length; i++) {
+        for (let i = 0; i < bombs.length; i++) {
 
-            if(event.target.getAttribute("id") === randomBombLocation[i].getAttribute("id")){
+            if(event.target.getAttribute("id") === bombs[i].getAttribute("id")){
                 
-                for (let i = 0; i < randomBombLocation.length; i++) {
-                    randomBombLocation[i].classList.add("bomb");
+                for (let i = 0; i < bombs.length; i++) {
+                    bombs[i].classList.add("bomb");
                 }
                 return;
 
             }
             
         }
-        cell.style.background = "green";
+        cell.style.background = "#E3B505";
 
     })
 }); 
