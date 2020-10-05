@@ -1,5 +1,3 @@
-const gameArea = document.getElementById("gameArea");
-
 const cellsNodeList = document.querySelectorAll(".cell");
 const cells = Array.from(cellsNodeList);
 
@@ -18,7 +16,6 @@ const randomBombGenerator = () => {
 
 for (let i = 0; i < 15; i++){
     randomBombLocation.push(randomBombGenerator());
-    console.log(randomBombLocation);
 }
 
 cells.forEach (cell => {
