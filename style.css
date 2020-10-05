@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    color: grey;
+    color:  dark grey;
     scroll-behavior: smooth;
 }
 
@@ -106,14 +106,15 @@
 
 #fun-facts-button{
     border: none;
-    width: 10rem;
+    width: 11rem;
+    
 }
 
 .fun-facts-button-border{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     background-color: white;
-    width: 100%;
+    width: 11rem;
+    height: auto;
     outline: none !important;
     border: none;
 }
@@ -121,6 +122,7 @@ h4 {
     text-align: center;
     word-wrap: normal;
     width: 100%;
+    font-size: x-large;
     font-family: 'Dancing Script', cursive;
 }
 .fun-facts{
@@ -154,6 +156,7 @@ h4 {
     padding: 15px;
     font-size: 14pt;
 }
+
 #timeline {
     background-color: #F8EDEB;
     height: fit-content;
@@ -256,24 +259,20 @@ h4 {
     filter: brightness(70%);  
 }
 
-
-#java-game{
+.card-body{
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    border: solid grey;
-    width: 80vw;
-    height: 80vh;
-    margin-top: 32px;
-    margin-bottom: 25px;
-    padding: 0px;
+    align-items: center;
 }
 
-.game-image{
-    width: 50vw;
-    height: 50vh;
+.embed{
+    color: grey;
 }
+
+.embed:hover{
+    color:#ffb5a7ff;
+}
+
 #footer{
     display: flex;
     flex-direction: column;
