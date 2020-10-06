@@ -3,7 +3,7 @@ const cells = Array.from(cellsNodeList);
 
 let randomBombLocation = [];
 
-module.exports = randomBombGenerator = () => {
+const randomBombGenerator = () => {
     const cell = cells[Math.floor(Math.random() * 100)];
 
     if (cell.classList.contains("badCell")){
