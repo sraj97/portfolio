@@ -293,12 +293,15 @@ h4 {
     filter: brightness(70%);  
 }
 
-.java-game{
+#projects{
     background-color: #f8edebff;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+.project-cards{
+    display: flex;
+}
 .card-body{
     display: flex;
     flex-direction: column;
