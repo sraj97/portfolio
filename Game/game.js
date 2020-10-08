@@ -1,8 +1,7 @@
 const cellsNodeList = document.querySelectorAll(".cell");
 const cells = Array.from(cellsNodeList);
 
-let xMove = [];
-let oMove = [];
+let randomBombLocation = [];
 
 const randomBombGenerator = () => {
     const cell = cells[Math.floor(Math.random() * 100)];
@@ -15,7 +14,7 @@ const randomBombGenerator = () => {
     }
 }
 
-for (let i = 0; i < 15; i++){
+for (let i = 0; i < 20; i++){
     randomBombLocation.push(randomBombGenerator());
 }
 
