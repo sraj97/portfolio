@@ -44,6 +44,12 @@
     margin: 0px;
     
 }
+
+#chosenOne {
+    font-weight: bold; 
+    text-align: center; 
+    margin: 50px;
+}
 #myBtn:hover {
     background-color: #555;
 }

@@ -193,22 +193,8 @@
         <div class="container about">
             <h2 class="pb-3 pt-2 border-bottom">Random Movie Generator</h2>
             <h5>Your random movie is.....</h5>
-            <h3 id = "chosenOne" style="font-weight: bold; text-align: center; margin: 50px;"></h3>
+            <h3 id = "chosenOne"></h3>
             <button id = "randomButton" onclick="myFunction()">Randomise</button>
-            
-            <script>
-                function myFunction() {
-                    randomButton = document.getElementById("randomButton");
-                    let choice = document.getElementById("chosenOne"); 
-
-                    const random = ["Lion King", "Incredibles", "Moana" , "Coco", "Finding Nemo", "Inside Out", "Funny Girl","Ocean's 8", "Pride & Prejudice", "Deadpool", "The Terminal", "Jurrasic World", "Hairspray", "The Help", "Blade","Pretty Woman", "The Ugly Truth", "Eat Pray Love", "Leap Year", "Definitely Maybe", "50 First Dates", "Chalet Girl", "Friends with Benefits", "Letters to Juliet", "La La Land", "Hamilton", "The Proposal", "The Intern", "Mr & Mrs Smith", "Sex & the City"];
-
-                    const selection = random[Math.floor(Math.random()*random.length)];
-
-                    choice.innerHTML = selection;
-                }
-                
-            </script>
         </div>
     </section>
     <footer id="footer">
